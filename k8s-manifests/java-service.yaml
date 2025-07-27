@@ -2,11 +2,12 @@ apiVersion: v1
 kind: Service
 metadata:
   name: java-api
-  namespace: default  # Make sure the namespace matches the deployment
+  namespace: default
 spec:
   ports:
     - port: 8080
       targetPort: 8080
+      nodePort: 30001
   selector:
     app: java-app
-  type: ClusterIP  # Internal communication
+  type: NodePort
