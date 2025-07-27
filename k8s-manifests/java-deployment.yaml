@@ -16,5 +16,6 @@ spec:
       containers:
         - name: java-api
           image: java-api:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 8080
