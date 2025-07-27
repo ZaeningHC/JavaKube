@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: java-api
-          image: your-java-image:latest
+          image: java-api:latest
           ports:
             - containerPort: 8080
