@@ -18,7 +18,7 @@ public class KubeService {
     }
 
     public String sendKubeToCSharpApi(Kube kube) {
-        String csharpApiUrl = "http://csharp-api:5000/api/kube/receive";
+        String csharpApiUrl = "http://csharp-api:5250/api/kube/receive";
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("Content-Type", "application/json");
